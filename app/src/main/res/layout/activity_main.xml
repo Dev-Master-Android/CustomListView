@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Shop"
+        android:textSize="@dimen/_36sp"
+        android:layout_marginBottom="@dimen/_20dp"/>
+
+    <Button
+        android:id="@+id/createStoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_24sp"
+        android:text="@string/create_shop"/>
+</LinearLayout>

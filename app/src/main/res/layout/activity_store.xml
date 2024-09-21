@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium">
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/product_name_hint"/>
+
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/product_price_hint"
+        android:inputType="numberDecimal"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/productImage"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="@dimen/_150dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_shop"
+        android:contentDescription="@string/product_name_hint"
+        app:shapeAppearanceOverlay="@style/RoundedCornersImageView"/>
+
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_product_button"
+        android:textSize="@dimen/_24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"/>
+
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        tools:listitem="@layout/list_item_product"
+        />
+</LinearLayout>

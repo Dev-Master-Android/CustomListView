@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Магазин продуктов</string>
+    <string name="welcome_text">Магазин продуктов</string>
+    <string name="create_store_button">Создать магазин</string>
+    <string name="product_name_hint">Название продукта</string>
+    <string name="product_price_hint">Цена продукта</string>
+    <string name="add_product_button">Добавить</string>
+    <string name="exit_menu">Выход</string>
+    <string name="tovar">Товар</string>
+    <string name="price">Цена: 100 руб.</string>
+    <string name="my_dialog">MyDialog</string>
+    <string name="are_you_sure">Вы уверены что хотите удалить %1$s?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="delete">%1$s удален(а)</string>
+    <string name="pls_add_image">Пожалуйста, добавьте изображение продукта</string>
+    <string name="pls_input_name">Пожалуйста, введите название продукта</string>
+    <string name="pls_input_price">Пожалуйста, введите цену продукта</string>
+    <string name="Shop">Магазин продуктов</string>
+    <string name="create_shop">Создать магазин</string>
+</resources>
