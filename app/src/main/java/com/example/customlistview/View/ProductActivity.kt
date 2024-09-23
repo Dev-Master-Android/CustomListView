@@ -84,7 +84,7 @@ class ProductActivity : AppCompatActivity() {
         }
 
         val product = Product(name, price, image)
-        productViewModel.addUser(product)
+        productViewModel.addProduct(product)
         productName.text.clear()
         productPrice.text.clear()
         productImage.setImageResource(R.drawable.ic_shop)
@@ -95,7 +95,7 @@ class ProductActivity : AppCompatActivity() {
         builder.setTitle(getString(R.string.my_dialog))
         builder.setMessage(getString(R.string.are_you_sure, product.name))
         builder.setPositiveButton(getString(R.string.yes)) { _, _ ->
-            productViewModel.deleteUser(product)
+            productViewModel.deleteProduct(product)
             Toast.makeText(this, getString(R.string.delete, product.name), Toast.LENGTH_LONG).show()
         }
         builder.setNegativeButton(getString(R.string.no)) { dialog, _ ->

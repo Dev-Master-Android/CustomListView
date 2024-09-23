@@ -31,14 +31,14 @@ class ProductViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
-    fun addUser(product: Product) {
+    fun addProduct(product: Product) {
         val currentList = _productList.value ?: mutableListOf()
         currentList.add(product)
         _productList.value = currentList
         saveUserList(currentList)
     }
 
-    fun deleteUser(product: Product) {
+    fun deleteProduct(product: Product) {
         val currentList = _productList.value ?: mutableListOf()
         currentList.remove(product)
         _productList.value = currentList
